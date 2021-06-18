@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_fondo"
+    tools:context=".LauncherActivity">
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_margin="16dp"
+        app:srcCompat="@drawable/img_logo" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/imageViewLogo">
+        <ImageButton
+            android:id="@+id/ImgBtPlay"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@null"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/btn_play" />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_toLeftOf="@id/ImgBtPlay"
+            android:layout_toStartOf="@id/ImgBtPlay"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:scaleType="fitEnd"
+            android:src="@drawable/btn_config"
+            />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_toRightOf="@id/ImgBtPlay"
+            android:layout_toEndOf="@id/ImgBtPlay"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:scaleType="fitEnd"
+            android:src="@drawable/btn_info"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
