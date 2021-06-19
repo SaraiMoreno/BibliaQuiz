@@ -29,6 +29,7 @@
             android:scaleType="fitCenter"
             android:src="@drawable/btn_play" />
         <ImageButton
+            android:id="@+id/button_config"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginTop="36dp"
@@ -43,6 +44,7 @@
             />
 
         <ImageButton
+            android:id="@+id/button_info"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginTop="36dp"
